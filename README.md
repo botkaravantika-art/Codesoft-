@@ -124,3 +124,163 @@ nextBtn.addEventListener("click", () => {
         // next question logic can be added here
     }
 });
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">🔍 Job Board</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Browse Jobs</a>
+    <a href="#">Pages</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </nav>
+  <div class="nav-btns">
+    <button class="login">Log in</button>
+    <button class="post">Post a Job</button>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-text">
+    <p class="count">4536+ Jobs listed</p>
+    <h1>Find your Dream Job</h1>
+    <p class="subtitle">
+      We provide online instant cash loans with quick approval that suit your term length
+    </p>
+    <button class="upload">Upload Your Resume</button>
+  </div>
+
+  <div class="hero-image">
+    <img src="https://i.imgur.com/0Z8FQ8G.png" alt="Job Illustration">
+  </div>
+</section>
+
+<!-- Search Bar -->
+<section class="search">
+  <input type="text" placeholder="Search keyword">
+  <input type="text" placeholder="Location">
+  <select>
+    <option>Category</option>
+    <option>IT</option>
+    <option>Finance</option>
+    <option>Marketing</option>
+  </select>
+  <button>Find Job</button>
+</section>
+
+</body>
+</html>
+style.css 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: #1e88e5;
+  color: white;
+}
+
+.navbar nav a {
+  margin: 0 12px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-btns button {
+  margin-left: 10px;
+  padding: 8px 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.login {
+  background: transparent;
+  color: white;
+}
+
+.post {
+  background: #2ecc71;
+  color: white;
+  border-radius: 4px;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  background: linear-gradient(135deg, #1e88e5, #42a5f5);
+  color: white;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.count {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+}
+
+.upload {
+  padding: 12px 20px;
+  background: #2ecc71;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.hero-image img {
+  width: 350px;
+}
+
+/* Search */
+.search {
+  display: flex;
+  gap: 10px;
+  padding: 20px 60px;
+  background: #f5f5f5;
+}
+
+.search input,
+.search select {
+  padding: 10px;
+  flex: 1;
+}
+
+.search button {
+  background: #2ecc71;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+}
