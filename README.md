@@ -126,9 +126,6 @@ nextBtn.addEventListener("click", () => {
 });
 
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
